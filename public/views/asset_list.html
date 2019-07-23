@@ -1,0 +1,75 @@
+<div data-ng-include src="'/views/includes/connection.html'"></div>
+<section data-ng-controller="AssetsController" data-ng-init="list()">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <div class="block-id">
+        <div class="icon-block text-center">          
+          <h3><span class="glyphicon glyphicon-list"></span> <span translate>Blocks</span> <span translate>mined on:</span>   {{pagination.current}} UTC</h3>
+   
+        </div>
+      </div> -->
+     
+
+    <!--   <div data-ng-if="pagination.current">
+        <p class="lead text-center m20v"  data-ng-show="loading">&nbsp;</p>
+        <p class="text-center m20v"  data-ng-show="pagination.isToday && !loading" translate>Today</p>
+        <p class="text-center m20v"  data-ng-show="!pagination.isToday && !loading">{{humanSince(pagination.currentTs)}}
+        <p class="text-center m20v"  data-ng-show="loading">&nbsp;</p>
+        <div class="m50v text-center">
+          
+        </div>
+      </div> -->
+    </div>
+    <div class="col-xs-12 col-md-12">
+      <div class="page-header">
+          <div class="row"> 
+            <div class="col-md-6">  
+                <h1><span translate>Assets</span> <small><span translate>by date.</span> {{detail}} {{before}}</small></h1>
+            </div>
+            <div class="col-md-6 text-right">  
+      <!--             <div class="text-center text-muted" data-ng-if="!pagination.current">
+        <span translate>Loading Selected Date...</span>
+      </div> -->
+           <div class="date-nav"> 
+            <a href="#" class="btn btn-primary btn-xs" datepicker-popup show-button-bar="false" data-ng-click="openCalendar($event)" data-ng-model="dt" is-open="opened" data-ng-required="true"><span class="glyphicon glyphicon-calendar"></span></a>
+                 <a class="btn btn-default" href="/blocks-date/{{pagination.prev}}"><small>&larr; {{pagination.prev}}</small></a>
+          <a class="btn btn-default" href="/blocks-date/{{pagination.next}}" data-ng-show="!pagination.isToday"><small>{{pagination.next}} &rarr;</small></a>
+              
+           </div>
+            </div>
+          </div>
+        
+      </div>
+      <table class="table table-hover table-striped">
+          <thead>
+            <tr>
+              <th>Txid</th>
+              <th>Type</th>
+              <th>Time</th>
+              <th>Block</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr data-ng-show="!latestAssets.length"><td colspan="3" translate>Waiting for transactions...</td></tr>
+          <tr class="fader" data-ng-repeat='tx in latestAssets'>
+            <td>
+              <a class="ellipsis" href="tx/{{tx.txid}}">{{tx.txid}}</a>
+            </td>
+            <td>{{tx.transtype}}</td>
+            <td>{{tx.time | date:'medium'}}</td>
+            <td><a href="block/{{tx.blockhash}}">{{tx.block}}</a></td>
+            <td>{{tx.totalAsset}}</td>
+          </tr>
+          </tbody>
+        </table>
+      <div data-ng-if="pagination.more">
+        <a class="btn btn-primary" href="/blocks-date/{{pagination.current}}" data-ng-show="{{before}}">Lastest block from date</a>
+        <a class="btn btn-primary" href="/blocks-date/{{pagination.current}}/{{pagination.moreTs}}">Older blocks from this date</a>
+      </div>
+    </div>
+  </div>
+  <h2 class="text-center text-muted" data-ng-show="!blocks.length && !loading"
+    translate>No blocks yet.</h2>
+</section>
+

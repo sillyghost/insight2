@@ -12,10 +12,17 @@ angular.module('insight.system').controller('HeaderController',
 
     $scope.menu = [{
       'title': 'Blocks',
-      'link': 'blocks'
-    }, {
+      'link': 'blocks',
+      'icon': 'fas fa-cube'
+    },{
+      'title': 'Assets',
+      'link': 'assets',
+      'icon': 'fas fa-cube'
+    },
+     {
       'title': 'Status',
-      'link': 'status'
+      'link': 'status',
+      'icon': 'fas fa-signal'
     }];
 
     $scope.openScannerModal = function() {
