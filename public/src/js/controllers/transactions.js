@@ -168,6 +168,11 @@ function($scope, $rootScope, $routeParams, $location, Global, Transaction, Trans
     pageNum += 1;
 
     async.each(data.txs, function(tx, callback) {
+      if (assetData.transactions || !assetData.transactions.length) {
+        _processTX(tx);
+        $scope.txs.push(tx);
+        return callback(null);
+      }
       var assetTx = assetData.transactions.filter(function(asset) {
         return asset.txid === tx.txid;
       })

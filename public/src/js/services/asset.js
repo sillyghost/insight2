@@ -1,7 +1,7 @@
 'use strict';
 
-var EXPLORER_API_URL = 'https://testnetexplorerapi.digiassets.net/api';
-var ASSET_API_URL = 'https://testnetapi.digiassets.net';
+var EXPLORER_API_URL = 'https://explorerapi.digiassets.net/api';
+var ASSET_API_URL = 'https://api.digiassets.net';
 
 angular.module('insight.assets')
   .factory('assetInfo',
