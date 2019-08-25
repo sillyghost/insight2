@@ -1,10 +1,10 @@
 {
   "name": "insight-bitcore",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the digibyte network and build your own services with it.",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the aryacoin network and build your own services with it.",
   "version": "0.3.0",
   "author": {
     "name": "DigiByte Team",
-    "email": "info@digibyte.io"
+    "email": "info@aryacoin.io"
   },
   "repository": "git@github.com:DigiByte-Core/insight.git",
   "contributors": [
@@ -38,7 +38,7 @@
     "insight",
     "blockchain",
     "blockexplorer",
-    "digibyte",
+    "aryacoin",
     "bitcore",
     "front-end"
   ],

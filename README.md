@@ -1,12 +1,12 @@
 # *insight*
 
-*insight* is an open-source digibyte blockchain explorer with complete REST
+*insight* is an open-source aryacoin blockchain explorer with complete REST
 and websocket APIs. Insight runs in NodeJS, uses AngularJS for the
 front-end and LevelDB for storage.
 
 Check some screenshots and more details at [insight's project homepage](http://digiexplorer.info/).
 
-*Insight* project is now split into two repositories. One for the [API](https://github.com/digibyte/insight-api) and for the front-end. This repository is for the front-end, which will install the API as a NPM dependency.
+*Insight* project is now split into two repositories. One for the [API](https://github.com/aryacoin/insight-api) and for the front-end. This repository is for the front-end, which will install the API as a NPM dependency.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Check some screenshots and more details at [insight's project homepage](http://d
 
   To install Insight, clone the main repository:
 
-    $ git clone https://github.com/digibyte/insight.git && cd insight
+    $ git clone https://github.com/aryacoin/insight.git && cd insight
 
   Install dependencies:
 
@@ -33,8 +33,8 @@ Check some screenshots and more details at [insight's project homepage](http://d
 
     http://localhost:3001
 
-  If *insight* reports problems connecting to **digibyted** please check the CONFIGURATION section of 
-  [insight-api README](https://github.com/digibyte/insight-api/blob/master/README.md). To set the 
+  If *insight* reports problems connecting to **aryacoind** please check the CONFIGURATION section of 
+  [insight-api README](https://github.com/aryacoin/insight-api/blob/master/README.md). To set the 
   environment variables run something like:
   
      $ INSIGHT_NETWORK=livenet BITCOIND_USER=user BITCOIND_PASS=pass INSIGHT_PUBLIC_PATH=public  npm start
@@ -43,7 +43,7 @@ Check some screenshots and more details at [insight's project homepage](http://d
   Please note that the app will need to sync its internal database
   with the blockchain state, which may take some time. You can check
   sync progress from within the web interface. More details about that process
-  on [insight-api README](https://github.com/digibyte/insight-api/blob/master/README.md). 
+  on [insight-api README](https://github.com/aryacoin/insight-api/blob/master/README.md). 
   
   
 ## Nginx Setup
@@ -130,11 +130,11 @@ compile***.
 
 ## Note
 
-For more details about the *insight API* configs and end-point, just go to [insight API github repository](https://github.com/digibyte/insight-api) or read the [documentation](https://github.com/digibyte/insight-api/blob/master/README.md)
+For more details about the *insight API* configs and end-point, just go to [insight API github repository](https://github.com/aryacoin/insight-api) or read the [documentation](https://github.com/aryacoin/insight-api/blob/master/README.md)
 
 ## Contribute
 
-Contributions and suggestions are welcomed at [insight github repository](https://github.com/digibyte/insight).
+Contributions and suggestions are welcomed at [insight github repository](https://github.com/aryacoin/insight).
 
 
 ## License
