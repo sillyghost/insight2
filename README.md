@@ -4,7 +4,7 @@
 and websocket APIs. Insight runs in NodeJS, uses AngularJS for the
 front-end and LevelDB for storage.
 
-Check some screenshots and more details at [insight's project homepage](http://digiexplorer.info/).
+Check some screenshots and more details at [insight's project homepage](http://ayaexplorer.info/).
 
 *Insight* project is now split into two repositories. One for the [API](https://github.com/aryacoin/insight-api) and for the front-end. This repository is for the front-end, which will install the API as a NPM dependency.
 

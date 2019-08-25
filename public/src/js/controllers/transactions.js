@@ -37,7 +37,7 @@ function($scope, $rootScope, $routeParams, $location, Global, Transaction, Trans
       }
     });
     
-    var assetImage = largeIcon || smallIcon || "http://localhost:3001/insight/img/Digibyte-Logo.png";
+    var assetImage = largeIcon || smallIcon || "http://localhost:3001/insight/img/Aryacoin-Logo.png";
     var verifications = meta && meta.verifications || false;
     var assetMeta = {name: assetName, desc: assetDesc, icon: assetImage, issuer: issuer, verifications: verifications};
     
