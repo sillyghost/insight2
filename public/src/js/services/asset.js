@@ -1,7 +1,7 @@
 'use strict';
 
-var EXPLORER_API_URL = 'https://explorerapi.digiassets.net/api';
-var ASSET_API_URL = 'https://api.digiassets.net';
+var EXPLORER_API_URL = 'https://explorerapi.explorer.aryacoin.io/api';
+var ASSET_API_URL = 'https://api.explorer.aryacoin.io';
 
 angular.module('insight.assets')
   .factory('assetInfo',

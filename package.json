@@ -3,36 +3,20 @@
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the aryacoin network and build your own services with it.",
   "version": "0.3.0",
   "author": {
-    "name": "DigiByte Team",
+    "name": "Aryacoin Team",
     "email": "info@aryacoin.io"
   },
-  "repository": "git@github.com:DigiByte-Core/insight.git",
+  "repository": "git@github.com:sillyghost/insight.git",
   "contributors": [
     {
-      "name": "Matias Alejo Garcia",
-      "email": "ematiu@gmail.com"
-    },
-    {
-      "name": "Manuel Araoz",
-      "email": "manuelaraoz@gmail.com"
-    },
-    {
-      "name": "Mario Colque",
-      "email": "colquemario@gmail.com"
-    },
-    {
-      "name": "Gustavo Cortez",
-      "email": "cmgustavo83@gmail.com"
-    },
-    {
-      "name": "Juan Ignacio Sosa Lopez",
-      "email": "bechilandia@gmail.com"
+      "name": "sillyghost",
+      "email": "sales@aryacoin.io"
     }
   ],
   "bugs": {
-    "url": "https://github.com/DigiByte-Core/insight/issues"
+    "url": "https://github.com/sillyghost/insight/issues"
   },
-  "homepage": "https://github.com/DigiByte-Core/insight.git",
+  "homepage": "https://github.com/sillyghost/insight.git",
   "license": "MIT",
   "keywords": [
     "insight",
@@ -46,7 +30,7 @@
     "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api"
   },
   "dependencies": {
-    "insight-bitcore-api": "git://github.com/DigiByte-Core/insight-api.git#499ad5247afd2ec99d9fac7d912c2e6b833c1736"
+    "insight-bitcore-api": "git://github.com/sillyghost/insight-api.git"
   },
   "devDependencies": {
     "bower": "~1.8.8",
